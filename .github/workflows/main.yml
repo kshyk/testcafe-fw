@@ -29,7 +29,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: '17'
           cache: 'npm'
 
       - name: Install Edge browser
@@ -47,4 +47,4 @@ jobs:
         run: npm ci
 
       - name: Run TestCafe tests
-        run: testcafe ${{ matrix.browser }} tests/ --skip-js-errors
+        run: npx testcafe ${{ matrix.browser }} tests/ --skip-js-errors
