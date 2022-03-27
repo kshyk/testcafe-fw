@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "pretty": "prettier --config .prettierrc . --write",
+    "test": "testcafe chrome tests/ --skip-js-errors"
+  },
+  "devDependencies": {
+    "eslint-plugin-testcafe": "^0.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.16.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "testcafe": "^1.18.4",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  }
+}
