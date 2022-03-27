@@ -39,10 +39,6 @@ jobs:
           sudo dpkg -i ./chrome.deb
           rm -rf ./chrome.deb
 
-      - name: Install Firefox browser
-        if: matrix.browser == 'firefox'
-        run: sudo apt-get install firefox
-
       - name: Install dependencies
         run: npm ci
 
