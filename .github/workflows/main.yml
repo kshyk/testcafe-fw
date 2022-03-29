@@ -50,7 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-10.15, macos-11]
+        os: [macos-latest]
         browser: [chrome, firefox]
     runs-on: ${{ matrix.os }}
 
@@ -70,7 +70,9 @@ jobs:
         run: npm ci
 
       - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
+        run: |
+          chmod +x "~/.testcafe-browser-tools/TestCafe Browser Tools.app/Contents/MacOS/testcafe-browser-tools"
+          npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
 
   windows_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
