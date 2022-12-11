@@ -73,7 +73,7 @@ jobs:
 
       - name: Run TestCafe tests
         run: |
-          chmod +x "./node_modules/testcafe-browser-tools/bin/mac/TestCafe Browser Tools.app"
+          chmod 777 "node_modules/testcafe-browser-tools/bin/mac/TestCafe Browser Tools.app"
           npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
 
   windows_os:
