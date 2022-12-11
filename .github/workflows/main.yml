@@ -72,8 +72,6 @@ jobs:
       - name: Run TestCafe tests
         run: |
           chmod +x "./node_modules/testcafe-browser-tools/bin/mac/TestCafe Browser Tools.app"
-          tccutil reset ScreenCapture com.devexpress.testcafe-browser-tools
-          tccutil reset AppleEvents com.devexpress.testcafe-browser-tools
           npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
 
   windows_os:
