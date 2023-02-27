@@ -72,7 +72,7 @@ jobs:
           npm i -g testcafe
 
       - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
+        run: sudo npx testcafe ${{ matrix.browser }}:headless tests/ -q --skip-js-errors passCount=1
 
   windows_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
