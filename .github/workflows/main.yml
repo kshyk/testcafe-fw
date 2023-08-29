@@ -72,7 +72,7 @@ jobs:
           npm i -g testcafe
 
       - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
+        run: npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors --disable-screenshots --video-options failedOnly=true
 
   windows_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
