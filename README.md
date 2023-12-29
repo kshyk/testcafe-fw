@@ -1,7 +1,7 @@
 # testcafe-fw
 
 [![Regression](https://github.com/kshyk/testcafe-fw/actions/workflows/main.yml/badge.svg)](https://github.com/kshyk/testcafe-fw/actions/workflows/main.yml)
-[![CodeQL](https://github.com/kshyk/testcafe-fw/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/kshyk/testcafe-fw/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/kshyk/testcafe-fw/actions/workflows/codeql.yml/badge.svg)](https://github.com/kshyk/testcafe-fw/actions/workflows/codeql.yml)
 
 [![forthebadge](https://forthebadge.com/images/badges/uses-badges.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
