@@ -1,6 +1,6 @@
 import { Selector } from 'testcafe';
 
-class HomePage {
+export default class HomePage {
   readonly breadButton: Selector;
   readonly thanks: Selector;
 
@@ -9,5 +9,3 @@ class HomePage {
     this.thanks = Selector('section#thanks');
   }
 }
-
-export default new HomePage();
