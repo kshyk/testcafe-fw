@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/git,node,intellij+all,linux,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,intellij+all,linux,macos
+# Created by https://www.toptal.com/developers/gitignore/api/git,node,yarn,linux,macos,intellij+all
+# Edit at https://www.toptal.com/developers/gitignore?templates=git,node,yarn,linux,macos,intellij+all
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -99,7 +99,6 @@ fabric.properties
 # Ignore everything but code style settings and run configurations
 # that are supposed to be shared within teams.
 
-.idea
 .idea/*
 
 !.idea/codeStyles
@@ -292,3 +291,22 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
+### yarn ###
+# https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+
+.yarn/*
+!.yarn/releases
+!.yarn/patches
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# if you are NOT using Zero-installs, then:
+# comment the following lines
+!.yarn/cache
+
+# and uncomment the following lines
+# .pnp.*
+
+# End of https://www.toptal.com/developers/gitignore/api/git,node,yarn,linux,macos,intellij+all
