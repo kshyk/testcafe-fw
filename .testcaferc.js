@@ -1,8 +1,7 @@
 module.exports = {
   skipJsErrors: true,
-  retryTestPages: true,
-  hostname: 'localhost',
-  pageRequestTimeout: 10000,
+  pageRequestTimeout: 8000,
+  ajaxRequestTimeout: 40000,
   pageLoadTimeout: 15000,
-  browserInitTimeout: 180000,
-}
+  browserInitTimeout: 180000
+};

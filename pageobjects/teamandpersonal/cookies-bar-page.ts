@@ -5,7 +5,9 @@ class CookiesBar {
   private readonly acceptCookiesButton: Selector;
 
   constructor() {
-    this.cookieBar = Selector('aside#moove_gdpr_cookie_info_bar');
+    this.cookieBar = Selector('aside#moove_gdpr_cookie_info_bar', {
+      timeout: 15000
+    });
     this.acceptCookiesButton = Selector('.moove-gdpr-infobar-allow-all');
   }
 
