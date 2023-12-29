@@ -1,4 +1,6 @@
 {
+  "author": "Jakub Turkiewicz <jj.turkiewicz@gmail.com> (https://kshyk.github.io/portfolio/)",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint-fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
