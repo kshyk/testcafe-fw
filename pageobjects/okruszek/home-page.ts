@@ -1,12 +1,20 @@
-import { Selector } from 'testcafe';
+import { t, Selector } from 'testcafe';
 
 class HomePage {
-  readonly breadButton: Selector;
-  readonly thanks: Selector;
+  private readonly breadButton: Selector;
+  private readonly thanks: Selector;
 
   constructor() {
     this.breadButton = Selector('.click-crumb');
     this.thanks = Selector('section#thanks');
+  }
+
+  async clickOnBread() {
+    await t.click(this.breadButton);
+  }
+
+  async isThanksVisible() {
+    await t.expect(this.thanks.visible).ok();
   }
 }
 

@@ -43,7 +43,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
+        run: npx testcafe ${{ matrix.browser }}:headless tests/
 
   mac_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
@@ -73,7 +73,7 @@ jobs:
           yarn global add testcafe
 
       - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors --disable-screenshots --video "" --video-options ""
+        run: npx testcafe ${{ matrix.browser }}:headless tests/ --disable-screenshots --video "" --video-options ""
 
   windows_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
@@ -101,5 +101,5 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --skip-js-errors
+        run: npx testcafe ${{ matrix.browser }}:headless tests/
         shell: bash
