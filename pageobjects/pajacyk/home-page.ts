@@ -1,6 +1,6 @@
 import { Selector } from 'testcafe';
 
-export default class HomePage {
+class HomePage {
   readonly bellyButton: Selector;
   readonly thanks: Selector;
 
@@ -9,3 +9,5 @@ export default class HomePage {
     this.thanks = Selector('.pajacyk__thankyou');
   }
 }
+
+export default new HomePage();
