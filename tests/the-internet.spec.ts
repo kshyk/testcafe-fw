@@ -1,6 +1,7 @@
 import loginPage from '../pageobjects/the-internet/login-page';
 import flash from '../pageobjects/the-internet/flash-message';
 import securePage from '../pageobjects/the-internet/secure-page';
+require('dotenv').config();
 
 fixture`The Internet`.page`https://the-internet.herokuapp.com`;
 

@@ -21,6 +21,7 @@
   "rules": {
     "no-underscore-dangle": "off",
     "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-var-requires": "off",
     "no-use-before-define": "off",
     "prettier/prettier": [
       "error",
