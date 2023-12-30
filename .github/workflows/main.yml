@@ -9,6 +9,10 @@ on:
     - cron: '0 5 * * 6'
   workflow_dispatch:
 
+env:
+  USER_NAME: ${{ secrets.USER_NAME }}
+  USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
+
 jobs:
   linux_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
