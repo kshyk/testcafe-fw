@@ -16,7 +16,8 @@ class CookiesBar {
     this.isCookiesBarHidden();
   }
 
-  isCookiesBarVisible = async () => await t.expect(this.bar.visible).ok({ timeout: 10000 });
+  isCookiesBarVisible = async () =>
+    await t.expect(this.bar.visible).ok({ timeout: 10000 });
 
   isCookiesBarHidden = async () => await t.expect(this.bar.visible).notOk();
 
