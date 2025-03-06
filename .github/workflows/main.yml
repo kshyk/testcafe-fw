@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-22.04]
+        os: [ubuntu-24.04]
         browser: [chrome, firefox]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 30
@@ -27,8 +27,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'yarn'
+          node-version: 22
 
       - name: Install Google Chrome
         if: matrix.browser == 'chrome'
@@ -48,7 +47,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-13]
+        os: [macos-15]
         browser: [chrome, firefox]
     runs-on: ${{ matrix.os }}
     timeout-minutes: 30
@@ -62,8 +61,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'yarn'
+          node-version: 22
 
       - name: Install dependencies
         run: |
@@ -92,8 +90,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'yarn'
+          node-version: 22
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
