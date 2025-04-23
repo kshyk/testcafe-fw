@@ -64,9 +64,7 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: |
-          yarn install --immutable
-          yarn dlx testcafe
+        run: yarn install --immutable
 
       - name: Run TestCafe tests
         run: npx testcafe ${{ matrix.browser }}:headless tests/ --disable-screenshots --video "" --video-options ""
