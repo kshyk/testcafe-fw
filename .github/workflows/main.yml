@@ -32,7 +32,7 @@ jobs:
       - name: Install Google Chrome
         if: matrix.browser == 'chrome'
         run: |
-          curl -L https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -o ./chrome.deb
+          curl -Lo ./chrome.deb "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb"
           sudo dpkg -i ./chrome.deb
           rm -rf ./chrome.deb
 
@@ -62,6 +62,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+
+      - name: Install Firefox browser
+        if: matrix.browser == 'firefox'
+        run: |
+          curl -Lo ~/Firefox.dmg "https://download.mozilla.org/?product=firefox-latest&os=osx"
+          hdiutil attach ~/Firefox.dmg -nobrowse -quiet
+          cp -R /Volumes/Firefox/Firefox.app /Applications/
+          hdiutil detach /Volumes/Firefox -quiet
+          rm -Rf ~/Firefox.dmg
 
       - name: Install dependencies
         run: yarn install --immutable
