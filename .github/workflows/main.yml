@@ -28,7 +28,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'yarn'
 
       - name: Install Google Chrome
         if: matrix.browser == 'chrome'
@@ -38,7 +37,7 @@ jobs:
           rm -rf ./chrome.deb
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Run TestCafe tests
         run: npx testcafe ${{ matrix.browser }}:headless tests/
@@ -63,11 +62,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'yarn'
 
       - name: Install dependencies
         run: |
-          yarn install --frozen-lockfile
+          yarn install --immutable
           yarn global add testcafe
 
       - name: Run TestCafe tests
@@ -93,10 +91,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'yarn'
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Run TestCafe tests
         run: npx testcafe ${{ matrix.browser }}:headless tests/
