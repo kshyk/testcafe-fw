@@ -46,42 +46,6 @@ jobs:
       - name: Run TestCafe tests
         run: npx testcafe ${{ matrix.browser }}:headless tests/
 
-  mac_os:
-    name: ${{ matrix.os }} (${{ matrix.browser }})
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [macos-15]
-        browser: [chrome, firefox]
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 30
-
-    steps:
-      - name: Checkout ${{ github.repository }} repository
-        uses: actions/checkout@v5
-        with:
-          fetch-depth: 0 # Shallow clones should be disabled for a better relevancy of analysis
-
-      - name: Use Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: 22
-
-      - name: Install Firefox browser
-        if: matrix.browser == 'firefox'
-        run: |
-          curl -Lo ~/Firefox.dmg "https://download.mozilla.org/?product=firefox-latest&os=osx"
-          hdiutil attach ~/Firefox.dmg -nobrowse -quiet
-          cp -R /Volumes/Firefox/Firefox.app /Applications/
-          hdiutil detach /Volumes/Firefox -quiet
-          rm -Rf ~/Firefox.dmg
-
-      - name: Install dependencies
-        run: yarn install --immutable
-
-      - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --disable-screenshots --video "" --video-options ""
-
   windows_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
     strategy:
@@ -101,7 +65,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v5
         with:
-          node-version: 22
+          node-version: 24
 
       - name: Install dependencies
         run: yarn install --immutable
