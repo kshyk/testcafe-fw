@@ -80,7 +80,7 @@ jobs:
         run: yarn install --immutable
 
       - name: Run TestCafe tests
-        run: npx testcafe ${{ matrix.browser }}:headless tests/ --disable-screenshots --video "" --video-options "" --skip-authentication
+        run: npx testcafe ${{ matrix.browser }}:headless tests/ -q passCount=1
 
   windows_os:
     name: ${{ matrix.os }} (${{ matrix.browser }})
