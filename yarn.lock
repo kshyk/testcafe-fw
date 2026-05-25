@@ -6,9 +6,9 @@ __metadata:
   cacheKey: 10c0
 
 "@adobe/css-tools@npm:^4.3.0-rc.1":
-  version: 4.4.4
-  resolution: "@adobe/css-tools@npm:4.4.4"
-  checksum: 10c0/8f3e6cfaa5e6286e6f05de01d91d060425be2ebaef490881f5fe6da8bbdb336835c5d373ea337b0c3b0a1af4be048ba18780f0f6021d30809b4545922a7e13d9
+  version: 4.5.0
+  resolution: "@adobe/css-tools@npm:4.5.0"
+  checksum: 10c0/fc969e1117098eb4cccdb73beb2508daa0e52760af1183d6288bafea59204943490ab3ede28593032ffb8929c0cee270b2a53254fe61139ab00604ea8fc33cea
   languageName: node
   linkType: hard
 
@@ -1518,6 +1518,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@node-ntlm/core@npm:^0.3.2":
+  version: 0.3.2
+  resolution: "@node-ntlm/core@npm:0.3.2"
+  dependencies:
+    des.js: "npm:^1.0.1"
+    js-md4: "npm:^0.3.2"
+    tslib: "npm:^2.5.0"
+  checksum: 10c0/fc6146408f2f5a16db92d65b61421701ef0f05f5b15edcd21268f9ea0a61c169ce3a7c48bc719fc128a59e77a1ee8dff9a91368e529e4900a6e2fa3117b497f9
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1605,11 +1616,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 25.8.0
-  resolution: "@types/node@npm:25.8.0"
+  version: 25.9.1
+  resolution: "@types/node@npm:25.9.1"
   dependencies:
     undici-types: "npm:>=7.24.0 <7.24.7"
-  checksum: 10c0/ff53e5428309d2e6060190ec5e02afd0e4a7369456b16130a7f5898f12a6ad0efd62d752830f2f7355d714ae429bc0acbb2dc0cbf761cadb03e88c4996cdf1dc
+  checksum: 10c0/9a04682842bebbcf21a1779dfeab9aa733d7bd7bbc0a0edb641ab3a9a3d43eac543225acf669c334f458f1956443ebc072bc3c72840c543b8b356cab5c82d456
   languageName: node
   linkType: hard
 
@@ -1999,11 +2010,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.10.12":
-  version: 2.10.30
-  resolution: "baseline-browser-mapping@npm:2.10.30"
+  version: 2.10.32
+  resolution: "baseline-browser-mapping@npm:2.10.32"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/70e6ac962d5b52be0b9460a57adc2cd4ccd2b0ee7cb4688e96f3c79122622fac7fb98743c4f41a4f12bc5c677a7c13bbe19e7e2f9b7230b9283c1f07b3401f3e
+  checksum: 10c0/408c93245bdf1e92ab0f891ebf9283ec60dbabfaac81bdc9a20d371565a2a496b0fb8028f7d628c3f66f90ee142670a81575cf1cbd5229f7b4b0d350db911085
   languageName: node
   linkType: hard
 
@@ -2397,9 +2408,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.328":
-  version: 1.5.358
-  resolution: "electron-to-chromium@npm:1.5.358"
-  checksum: 10c0/86e3e5cb9541fe3a3d435e614b97024fda81c913a60ffa822b156995a8ffa1049f81cfa3e43888dae88d2e2c8254b1b51a8b9169858b3c4093ed3d34dc5de9bb
+  version: 1.5.361
+  resolution: "electron-to-chromium@npm:1.5.361"
+  checksum: 10c0/5e6e9c0c12ab82366eddf575c8b9114d5af710abad3b592141c56cfa0169471f3633dcc793420c303fad68dff21c8fb724b43cde7e66be947983fa3d6d5a7359
   languageName: node
   linkType: hard
 
@@ -3701,9 +3712,9 @@ __metadata:
   linkType: hard
 
 "node-releases@npm:^2.0.36":
-  version: 2.0.44
-  resolution: "node-releases@npm:2.0.44"
-  checksum: 10c0/004337ee9c0c455e81fdfc85cc8a585e89932d28338cd35a4ddba21ef2b68ff20cf06097544e7859c1868579d8529ed230802b127be5357c153e267079e8d851
+  version: 2.0.46
+  resolution: "node-releases@npm:2.0.46"
+  checksum: 10c0/04632591f97f15848adfb12b21fa013a6c19809afcf5db65fe88c95a36271c3f423e21110fd319ad5a9c5029ffe65eb81f3e4857e6af19622bc888d92a04ad22
   languageName: node
   linkType: hard
 
@@ -4366,11 +4377,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:^7.5.3, semver@npm:^7.7.3":
-  version: 7.8.0
-  resolution: "semver@npm:7.8.0"
+  version: 7.8.1
+  resolution: "semver@npm:7.8.1"
   bin:
     semver: bin/semver.js
-  checksum: 10c0/8f096ca9b80ffd47b308d03f9ce8c873e27e2983f36023c559cdc92c51e8433fc23ebbfe57ec9623fc155636a6961ee989501099841ae4bb1babc8d2b3f048cd
+  checksum: 10c0/92d6871d6347e1f99d0ba396a70f2545ccf2a032cda3d378fa0699edf7506b5c6d266aed55c8b88e72bd91a30d2351e4f39db479375374430fcdc4b58f4e3c1a
   languageName: node
   linkType: hard
 
@@ -4537,7 +4548,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"testcafe-hammerhead@npm:31.7.7, testcafe-hammerhead@npm:>=19.4.0":
+"testcafe-hammerhead@npm:31.7.7":
   version: 31.7.7
   resolution: "testcafe-hammerhead@npm:31.7.7"
   dependencies:
@@ -4567,6 +4578,39 @@ __metadata:
     tunnel-agent: "npm:0.6.0"
     ws: "npm:^7.4.6"
   checksum: 10c0/b409b21fae5277487e8779b904dcbd0c1080322099693e91652b608e9c0e9d1c5062bd7a3bcdadcbe657dce4a38da411d9df6a703454aef58411ac18f270124e
+  languageName: node
+  linkType: hard
+
+"testcafe-hammerhead@npm:>=19.4.0":
+  version: 31.7.8
+  resolution: "testcafe-hammerhead@npm:31.7.8"
+  dependencies:
+    "@adobe/css-tools": "npm:^4.3.0-rc.1"
+    "@electron/asar": "npm:^3.2.3"
+    "@node-ntlm/core": "npm:^0.3.2"
+    acorn-hammerhead: "npm:0.6.2"
+    bowser: "npm:1.6.0"
+    crypto-md5: "npm:^1.0.0"
+    debug: "npm:4.3.1"
+    esotope-hammerhead: "npm:0.6.9"
+    http-cache-semantics: "npm:^4.1.0"
+    iconv-lite: "npm:0.5.1"
+    lodash: "npm:^4.17.21"
+    lru-cache: "npm:11.0.2"
+    match-url-wildcard: "npm:0.0.4"
+    merge-stream: "npm:^1.0.1"
+    mime: "npm:~1.4.1"
+    mustache: "npm:^2.1.1"
+    nanoid: "npm:^3.1.12"
+    os-family: "npm:^1.0.0"
+    parse5: "npm:^7.1.2"
+    pinkie: "npm:2.0.4"
+    read-file-relative: "npm:^1.2.0"
+    semver: "npm:7.5.3"
+    tough-cookie: "npm:4.1.3"
+    tunnel-agent: "npm:0.6.0"
+    ws: "npm:^7.4.6"
+  checksum: 10c0/7eaa8c995e152059b5ae815a1cce5b7ea885b05b4e4e8de4dbf6600ec94aa44c0a8f7c84a3b4712a01d8a30172831355cd45a319cac560dfbdf2df0f9855630d
   languageName: node
   linkType: hard
 
@@ -4809,6 +4853,13 @@ __metadata:
   peerDependencies:
     typescript: ">=4.8.4"
   checksum: 10c0/767849383c114e7f1971fa976b20e73ac28fd0c70d8d65c0004790bf4d8f89888c7e4cf6d5949f9c1beae9bc3c64835bef77bbe27fddf45a3c7b60cebcf85c8c
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.5.0":
+  version: 2.8.1
+  resolution: "tslib@npm:2.8.1"
+  checksum: 10c0/9c4759110a19c53f992d9aae23aac5ced636e99887b51b9e61def52611732872ff7668757d4e4c61f19691e36f4da981cd9485e869b4a7408d689f6bf1f14e62
   languageName: node
   linkType: hard
 
@@ -5079,8 +5130,8 @@ __metadata:
   linkType: hard
 
 "ws@npm:^7.2.0, ws@npm:^7.4.6":
-  version: 7.5.10
-  resolution: "ws@npm:7.5.10"
+  version: 7.5.11
+  resolution: "ws@npm:7.5.11"
   peerDependencies:
     bufferutil: ^4.0.1
     utf-8-validate: ^5.0.2
@@ -5089,7 +5140,7 @@ __metadata:
       optional: true
     utf-8-validate:
       optional: true
-  checksum: 10c0/bd7d5f4aaf04fae7960c23dcb6c6375d525e00f795dd20b9385902bd008c40a94d3db3ce97d878acc7573df852056ca546328b27b39f47609f80fb22a0a9b61d
+  checksum: 10c0/7972670b676fb1ccba73b0899ca3c2e04e8c2075629c2614cced7f556536f96a672bbf4619fc5a06c8b8720bb839a47ca88c69c95dc14c9c61a99fbecba1c866
   languageName: node
   linkType: hard
 
