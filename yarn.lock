@@ -2010,11 +2010,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.11.12":
-  version: 2.11.14
-  resolution: "baseline-browser-mapping@npm:2.11.14"
+  version: 2.11.18
+  resolution: "baseline-browser-mapping@npm:2.11.18"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/b0d248660ed8a09b0738fb9ca383668e8e445ad23b3efa8a5c41ee91fdf09399766513f97e5effd77e2e5027c1eec225f84bbfdf01586871e5ba2bb4cce8ea83
+  checksum: 10c0/f7a3860b5e3cb1cf650275a7202e753cb0db68e5cccb2b9395f5a37667fb1dd43eb22b7bd3ecd6f9f78c6ff73ae5481245ecddb55844c466ec46cddfe1ac0d1a
   languageName: node
   linkType: hard
 
@@ -2408,9 +2408,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.5.402":
-  version: 1.5.407
-  resolution: "electron-to-chromium@npm:1.5.407"
-  checksum: 10c0/b542d12ef5c0f461300a820b3006b889f14e221f7af3f0353036b259b6d7de824ff365cb5da867309511462378c3576a522b57c3cf42f6185d35387fea3dfb23
+  version: 1.5.412
+  resolution: "electron-to-chromium@npm:1.5.412"
+  checksum: 10c0/09834068e660fe6d888863e0a7f1ae4f2f42d9c77822d7a864eb79dc1643fb48c0b806cb17b162ed1f8794533d9299d5abdb14c3a10939c9276674f0ff9a8f9a
   languageName: node
   linkType: hard
 
@@ -3076,9 +3076,9 @@ __metadata:
   linkType: hard
 
 "humanize-duration@npm:^3.25.0":
-  version: 3.34.0
-  resolution: "humanize-duration@npm:3.34.0"
-  checksum: 10c0/58f6399835a23d8ff303bf9de0a09ed8db1e42eb028f3eb04e0682f1f711d810f9a8b04668721dbcdd14d776b0d3ffb9dc136e3cb0e377e5a58bc4483ac4ea19
+  version: 3.34.1
+  resolution: "humanize-duration@npm:3.34.1"
+  checksum: 10c0/5fbd1f8e0cc5bb2cac99c4f706670b529ea97827ff9251d5614cac7c4136a1eebd86a669bffb455896a4f153f501501605b3dff5622ef5c4201e0f1f79e1fd5a
   languageName: node
   linkType: hard
 
